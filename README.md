@@ -25,7 +25,7 @@ healthy individuals.
 Execute the following command:
 
 ```bash
-python inference_tf.py --input_image case_00000_image_reo_crop.nii.gz --output_filename case_00000_image_reo_mask.nii.gz --model weights.h5
+python inference_tf.py --input_image data/case_00000_image_reo_crop.nii.gz --output_filename data/case_00000_image_reo_mask.nii.gz --model weights/weights.h5
 ```
 
 > Note that depending on how  your environment is configured you might have to replace `python` with `python3`

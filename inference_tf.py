@@ -1,10 +1,10 @@
 import argparse
 import numpy as np
 from tensorflow import keras
-from instance_nor import *
-from losscustom import *
+from src.instance_nor import *
+from src.losscustom import *
 import nibabel as nib
-from resize import *
+from src.resize import *
 
 def normalize(volume):
     """Normalize the volume"""
@@ -89,9 +89,9 @@ def applicator(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description='Apply the cor/med model to a a cropped area originating from a CT image. ')
-    parser.add_argument("--input_image", type=str, default='case_00000_image_reo_crop.nii.gz')
-    parser.add_argument("--output_filename", type=str, default='case_00000_image_reo_maks.nii.gz')
-    parser.add_argument("--model", type=str, default='weights.h5')
+    parser.add_argument("--input_image", type=str, default='data/case_00000_image_reo_crop.nii.gz')
+    parser.add_argument("--output_filename", type=str, default='data/case_00000_image_reo_maks.nii.gz')
+    parser.add_argument("--model", type=str, default='weights/weights.h5')
 
     parser.add_argument('--version', action='version', version='%(prog)s 1.0')
     parser.add_argument("-q", "--quiet",
