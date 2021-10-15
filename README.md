@@ -6,6 +6,7 @@ Code utilized for the UNET model implemented in the following publication:
 > Automated Segmentation of Kidney Cortex and Medulla in CT Images: a Multisite Evaluation Study 
 
 
+Reference the above paper when parts of the repo are used. 
 
 ![Model Architecture](model.png)
 
@@ -34,3 +35,17 @@ Please utilize python 3.8.6 or above
 See the `requirements.txt` for dependencies. 
 
 > pip install -r requirements.txt
+
+
+### Issues
+
+Report any issues utilizing the issue reporting mechanism. 
+
+### Contirbutors
+
+Timothy L Kline (Kline.Timothy@mayo.edu)
+
+Panagiotis Korfiatis (Korfiatis.Panagiotis@mayo.edu)
+
+
+Let us know if you are interested in collaboration relevant to this repository. 
